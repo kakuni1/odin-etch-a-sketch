@@ -1,0 +1,31 @@
+body {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#container {
+    border: 2px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+}
+
+.grid-cell {
+    box-sizing: border-box;
+    width: var(--cell-size, calc(100% / 16));
+    height: var(--cell-size, calc(100% / 16));
+}
+
+.grid-cell.color {
+    background-color: rgb(var(--random-rgb));
+    opacity: var(--opacity-level, 1);
+}
