@@ -1,5 +1,5 @@
 body {
-    background-color: darkgray;
+    background-color: rgb(169, 177, 214);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,9 +23,6 @@ button {
     box-sizing: border-box;
     width: var(--cell-size, calc(100% / 16));
     height: var(--cell-size, calc(100% / 16));
-}
-
-.grid-cell.color {
     background-color: rgb(var(--random-rgb));
     opacity: var(--opacity-level, 1);
 }
